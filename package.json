@@ -1,0 +1,19 @@
+{
+  "name": "sanber56-mobile-angelagloria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelaglo/Sanber56-Mobile-AngelaGloria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelaglo/Sanber56-Mobile-AngelaGloria/issues"
+  },
+  "homepage": "https://github.com/angelaglo/Sanber56-Mobile-AngelaGloria#readme"
+}
