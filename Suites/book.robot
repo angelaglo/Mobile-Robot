@@ -27,6 +27,10 @@ Book With Valid Data
     Click End Date On Book Screen
     Click Flight
     Click Book Flight
+    Click Price Flight
+    Click Confirm
+    Verify Confirm Appears
+    
 
     
 

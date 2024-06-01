@@ -50,5 +50,15 @@ Click Flight
 Click Book Flight
     Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]
 
+Click Price Flight
+    Wait Until Element Is Visible    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/price9"]
+    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/price9"]
+
+Click Confirm
+    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]
+
+Verify Confirm Appears
+    Wait Until Element Is Visible        locator=//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]
+
 
 
