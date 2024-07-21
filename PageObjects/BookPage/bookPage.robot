@@ -2,63 +2,64 @@
 Documentation        Segala hal yg berkaitan dengan login
 Resource             ../base.robot
 Resource             ../HomePage/homePage.robot
+Variables            book-page-locators.yaml
 Library    AppiumLibrary
 
 *** Keywords ***
 Click Book Menu On Login Screen
-    Click Element                    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/book"]
+    Click Element                    locator=${book_menu}
 
 Verify Book Screen Appears
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@text="ONE WAY"]
+    Wait Until Element Is Visible        locator=${button_one_way}
 
 Click From City On Book Screen
-    Wait Until Element Is Visible        locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
-    Click Element                    locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@resource-id="android:id/text1" and @text="Chicago"]
-    Click Element                    locator=//android.widget.TextView[@resource-id="android:id/text1" and @text="Chicago"]
+    Wait Until Element Is Visible        locator=${button_spinner_from}
+    Click Element                    locator=${button_spinner_from}
+    Wait Until Element Is Visible        locator=${city_from}
+    Click Element                    locator=${city_from}
 
 Click To City On Book Screen
-    Wait Until Element Is Visible        locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerTo"]
-    Click Element                    locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerTo"]
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@resource-id="android:id/text1" and @text="Ottawa"]
-    Click Element                    locator=//android.widget.TextView[@resource-id="android:id/text1" and @text="Ottawa"]
+    Wait Until Element Is Visible        locator=${button_spinner_to}
+    Click Element                    locator=${button_spinner_to}
+    Wait Until Element Is Visible        locator=${city_to}
+    Click Element                    locator=${city_to}
 
 Click Class On Book Screen
-    Wait Until Element Is Visible        locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerClass"]
-    Click Element                    locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerClass"]
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@resource-id="android:id/text1" and @text="First"]
-    Click Element                    locator=//android.widget.TextView[@resource-id="android:id/text1" and @text="First"]
+    Wait Until Element Is Visible        locator=${button_spinner_class}
+    Click Element                    locator=${button_spinner_class}
+    Wait Until Element Is Visible        locator=${class}
+    Click Element                    locator=${class}
 
 Click Start Date On Book Screen
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textStartDate"]
-    Click Element                    locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textStartDate"]
-    Wait Until Element Is Visible        locator=//android.widget.LinearLayout[@resource-id="android:id/parentPanel"]
-    Click Element                    locator=//android.view.View[@content-desc="15 August 2019"]
-    Click Element                    locator=//android.widget.Button[@resource-id="android:id/button1"]
+    Wait Until Element Is Visible        locator=${start_date}
+    Click Element                    locator=${start_date}
+    Wait Until Element Is Visible        locator=${date_dialog}
+    Click Element                    locator=${date_selected}
+    Click Element                    locator=${button_date}
 
 Click End Date On Book Screen
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textEndDate"]
-    Click Element                    locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textEndDate"]
-    Wait Until Element Is Visible        locator=//android.widget.LinearLayout[@resource-id="android:id/parentPanel"]
-    Click Element                    locator=//android.view.View[@content-desc="15 August 2019"]
-    Click Element                    locator=//android.widget.Button[@resource-id="android:id/button1"]
+    Wait Until Element Is Visible        locator=${end_date}
+    Click Element                    locator=${end_date}
+    Wait Until Element Is Visible        locator=${date_dialog}
+    Click Element                    locator=${date_selected}
+    Click Element                    locator=${button_date}
 
 Click Flight
-    Wait Until Element Is Visible    locator=//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]
-    Click Element    locator=//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]
+    Wait Until Element Is Visible    locator=${radio_flight}
+    Click Element    locator=${radio_flight}
 
 Click Book Flight
-    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]
+    Click Element    locator=${book_flight}
 
 Click Price Flight
-    Wait Until Element Is Visible    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/price9"]
-    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/price9"]
+    Wait Until Element Is Visible    locator=${price_flight}
+    Click Element    locator=${price_flight}
 
 Click Confirm
-    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]
+    Click Element    locator=${confirm}
 
 Verify Confirm Appears
-    Wait Until Element Is Visible        locator=//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]
+    Wait Until Element Is Visible        locator=${confirm_text}
 
 
 
