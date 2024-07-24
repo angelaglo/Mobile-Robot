@@ -12,8 +12,8 @@ ${INVALID_PASSWORD}           12345678
 
 
 *** Test Cases ***
+User Should Not Be Able To Login With Invalid Credential
+    Login With Invalid Credential    ${INVALID_USERNAME}    ${INVALID_PASSWORD}
+
 User Should Be Able To Login With Valid Credential
     Login With Valid Credential    ${VALID_USERNAME}    ${VALID_PASSWORD}
-
-
-

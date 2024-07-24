@@ -1,4 +1,6 @@
 home_screen: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]
 signin_button: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]
+search_button: //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
 success_text: //android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]
-failed_text: //android.widget.Toast[1]
+failed_text: //android.widget.Toast[@text="Invalid username/password"]
+

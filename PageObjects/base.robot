@@ -7,7 +7,7 @@ Library                      AppiumLibrary
 ${REMOTE_URL}            http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}         Android
 ${PLATFORM_VERSION}      14.0
-${DEVICE_NAME}           Pixel 7 API 34
+${DEVICE_NAME}           Testing Android
 ${APP_PACKAGE}           com.example.myapplication
 ${APP_ACTIVITY}          com.example.myapplication.MainActivity
 

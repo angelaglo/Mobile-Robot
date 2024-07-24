@@ -1,0 +1,5 @@
+text_input: //android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
+search_text: //*[@resource-id='com.example.myapplication:id/searchFlight']
+search_page: //android.widget.TableLayout/android.widget.TableRow[1]
+flight_number: //android.widget.TextView[@text="DA 935"]
+valid_flight_toast: //android.widget.Toast[@text="Please enter valid Flight Number"]
